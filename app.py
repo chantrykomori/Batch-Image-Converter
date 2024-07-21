@@ -55,7 +55,11 @@ class MainWindow(QMainWindow):
         ".jpeg",
         ".gif",
         ".tiff",
-        ".tga"    
+        ".tga",
+        ".bmp",
+        ".dds",
+        ".dib",
+        ".pcx"    
         ]
 
         filePathLayout = QGridLayout()
@@ -271,6 +275,8 @@ class MainWindow(QMainWindow):
                         ending = ".jpeg"
                     case "tiff":
                         ending = ".tiff"
+                    case "webp":
+                        ending = ".webp"
                     case ".png":
                         pass
                     case ".jpg":
@@ -291,7 +297,11 @@ class MainWindow(QMainWindow):
                     status_text.emit(f"Editing {file} now...")
                     image_to_display.emit(file)
                     img = Image.open(file)
-                    img.save(f"{editedPath}/{newFilename}")
+                    if (ending != ".webp") and (fileFormat != ".gif"):
+                        img.save(f"{editedPath}/{newFilename}")
+                    else:
+                        img.info.pop("background", None)
+                        img.save(f"{editedPath}/{newFilename}", "gif", save_all=True)
                     status_text.emit(f"Saved as {newFilename}...")
                     file_processed.emit()
                     img.close()
