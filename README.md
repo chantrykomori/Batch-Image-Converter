@@ -2,6 +2,7 @@ A simple image converter utility made to quickly convert all image files in a fo
 
 Supported image formats:
 * GIF
+* BMP
 * PNG
 * JPG
 * TIFF
