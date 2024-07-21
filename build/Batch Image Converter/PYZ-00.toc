@@ -1,5 +1,5 @@
-('C:\\Users\\vegap\\Desktop\\python\\enb screenshot manager\\build\\Batch '
- 'Image Converter\\PYZ-00.pyz',
+('C:\\Users\\vegap\\Desktop\\python\\Batch Image Converter\\build\\Batch Image '
+ 'Converter\\PYZ-00.pyz',
  [('PIL',
    'C:\\Users\\vegap\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PIL\\__init__.py',
    'PYMODULE'),
