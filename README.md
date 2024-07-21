@@ -7,3 +7,8 @@ Supported image formats:
 * JPG
 * TIFF
 * TGA
+* BMP
+* DDS
+* DIB
+* PCX
+* WEBP (read-only, why are you saving files as webp)
