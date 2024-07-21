@@ -1,4 +1,4 @@
-A simple image converter utility made to quickly convert all image files in a folder to another format, powered by the Pillow library.
+A simple image converter utility made to quickly convert all image files in a folder to another format, powered by the Pillow library. Supports conversion of WEBP to GIF!
 
 Supported image formats:
 * GIF
